@@ -1,14 +1,16 @@
-package com.example.tbtekber;
+package com.example.tbtekber.DaftarEvent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Event1Activity extends AppCompatActivity {
+import com.example.tbtekber.R;
+
+public class Event5Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event1);
+        setContentView(R.layout.activity_event5);
     }
 }

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Event1Activity" />
+        <activity android:name=".DaftarEvent.Event6Activity"></activity>
+        <activity android:name=".DaftarEvent.Event5Activity" />
+        <activity android:name=".DaftarEvent.Event4Activity" />
+        <activity android:name=".DaftarEvent.Event3Activity" />
+        <activity android:name=".DaftarEvent.Event2Activity" />
+        <activity android:name=".DaftarEvent.Event1Activity" />
         <activity
             android:name=".CariEventActivity"
             android:label="@string/kembali"

@@ -45,14 +45,14 @@
                         android:layout_width="240dp"
                         android:layout_marginLeft="5dp"
                         android:layout_height="wrap_content"
-                        android:text="Workshop Photography"
+                        android:text="@string/photography"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="11 November 2019"
+                        android:text="@string/tglphotography"
                         android:layout_marginRight="5dp"
                         android:layout_marginLeft="5dp"
                         android:textSize="15dp"/>
@@ -92,14 +92,14 @@
                         android:layout_width="240dp"
                         android:layout_marginLeft="5dp"
                         android:layout_height="wrap_content"
-                        android:text="Pontianak Cycling Club"
+                        android:text="@string/pontianakcycling"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10 November 2019"
+                        android:text="@string/tglcycling"
                         android:layout_marginRight="5dp"
                         android:layout_marginLeft="5dp"
                         android:textSize="15dp"/>
@@ -139,14 +139,14 @@
                         android:layout_width="240dp"
                         android:layout_marginLeft="5dp"
                         android:layout_height="wrap_content"
-                        android:text="Food Festival"
+                        android:text="@string/foodfestival"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="4-6 November 2019"
+                        android:text="@string/tglfood"
                         android:layout_marginRight="5dp"
                         android:layout_marginLeft="5dp"
                         android:textSize="15dp"/>
@@ -186,14 +186,14 @@
                         android:layout_width="240dp"
                         android:layout_marginLeft="5dp"
                         android:layout_height="wrap_content"
-                        android:text="Faint and Papper"
+                        android:text="@string/paintandpaper"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20 November 2019"
+                        android:text="@string/tglpain"
                         android:layout_marginRight="5dp"
                         android:layout_marginLeft="5dp"
                         android:textSize="15dp"/>
