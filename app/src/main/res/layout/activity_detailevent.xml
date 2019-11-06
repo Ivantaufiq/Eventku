@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".DetailEventActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/event4"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Nama"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/nama_event"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Paint and Paper"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat,RtlSymmetry"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Tanggal"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tgl_event"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="20 November 2019"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat,RtlSymmetry"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lokasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Lokasi"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/lokasi_event"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Rumah Radang"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat,RtlSymmetry"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Informasi"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/info_event"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="08xx xxxx xxxx"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat,RtlSymmetry"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/deskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Deskripsi"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:textSize="24sp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/deskripsi_event"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat,RtlSymmetry"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btn_beli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beli Tiket"
+                    android:layout_marginStart="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:onClick="buttonBeli"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/komen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Komentar"
+                    android:textSize="20sp"
+                    tools:ignore="RtlSymmetry" />
+                <EditText
+                    android:id="@+id/komentar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

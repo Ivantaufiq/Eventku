@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Eventku</string>
+
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="kembali">Kembali</string>
+    <string name="can_not_create">Tidak Dapat Membuat Akun Baru</string>
+    <string name="invalid_account">Akun Tidak Terdaftar</string>
+    <string name="emailexists">Email Telah Tersedia, Gunakan Email Lain</string>
+    <string name="profiltext">Informasi Data Diri Anda</string>
+    <string name="wishlisttext">Daftar Event Yang Ingin Anda Kunjungi</string>
+    <string name="carievent">Temukan Event Yang Ingin Sukai</string>
+    profiltext
+</resources>
