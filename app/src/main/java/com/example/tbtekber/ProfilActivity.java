@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.tbtekber.Profil.HubungiKamiActivity;
+import com.example.tbtekber.Profil.UbahEmail;
+import com.example.tbtekber.Profil.UbahPassword;
+
 public class ProfilActivity extends AppCompatActivity {
 
     @Override

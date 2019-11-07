@@ -3,6 +3,7 @@
     package="com.example.tbtekber">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -11,10 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HubungiKamiActivity"></activity>
-        <activity android:name=".UbahPassword" />
-        <activity android:name=".UbahEmail" />
-        <activity android:name=".ProfilActivity" />
+        <activity android:name=".Profil.HubungiKamiActivity"
+            android:label="@string/kembali"
+            android:parentActivityName=".ProfilActivity"
+            android:theme="@style/Theme"></activity>
+        <activity android:name=".Profil.UbahPassword"
+            android:label="@string/kembali"
+            android:parentActivityName=".ProfilActivity"
+            android:theme="@style/Theme"/>
+        <activity android:name=".Profil.UbahEmail"
+            android:label="@string/kembali"
+            android:parentActivityName=".ProfilActivity"
+            android:theme="@style/Theme"/>
+        <activity android:name=".ProfilActivity"
+            android:label="@string/kembali"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme"/>
         <activity
             android:name=".PendaftaranEvent"
             android:label="@string/kembali"
@@ -64,8 +77,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".EOActivity" />
-        <activity android:name=".KonsumenActivity" />
         <activity android:name=".PembayaranActivity" />
         <activity android:name=".MainActivity" />
     </application>
