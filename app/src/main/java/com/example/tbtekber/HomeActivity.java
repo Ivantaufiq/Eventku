@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void buttonProfil(View view) {
-        Intent c = new Intent(HomeActivity.this,KonsumenActivity.class);
+        Intent c = new Intent(HomeActivity.this,ProfilActivity.class);
         startActivity(c);
     }
 }
