@@ -46,6 +46,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
                     android:layout_height="190dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="10dp"
                     android:onClick="buttonSearch">
                     <LinearLayout
@@ -62,7 +63,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:text="Cari Event"/>
+                            android:text="@string/carievent"/>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
@@ -73,7 +74,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textAlignment="center"
-                            android:text="@string/carievent"
+                            android:text="@string/carieventtext"
                             android:padding="5dp"
                             />
                     </LinearLayout>
@@ -83,7 +84,8 @@
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
-                    android:onClick="buttonWishlist">
+                    app:cardCornerRadius="8dp"
+                    android:onClick="buttonPendaftaran">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -92,13 +94,13 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/wishlist"/>
+                            android:src="@drawable/campaign"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:text="Wishlist"/>
+                            android:text="@string/pendaftaran"/>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
@@ -109,7 +111,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textAlignment="center"
-                            android:text="@string/wishlisttext"
+                            android:text="@string/pendaftarantext"
                             android:padding="5dp"
                             />
                     </LinearLayout>
@@ -128,6 +130,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="160dp"
                     android:layout_height="190dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="10dp"
                     android:onClick="buttonProfil">
 
@@ -146,7 +149,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Profil"
+                            android:text="@string/profil"
                             android:textStyle="bold" />
 
                         <View

@@ -3,9 +3,12 @@ package com.example.tbtekber.DaftarEvent;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -14,7 +17,7 @@ import com.example.tbtekber.R;
 
 public class Event1Activity extends AppCompatActivity {
     LinearLayout expandableView;
-    Button arrowBtn;
+    Button arrowBtn, gps1;
     CardView cardView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,16 @@ public class Event1Activity extends AppCompatActivity {
         expandableView = findViewById(R.id.expandableView);
         arrowBtn = findViewById(R.id.arrowBtn);
         cardView = findViewById(R.id.cardView);
+        gps1 = findViewById(R.id.gps1);
+
+        gps1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri addressUri = Uri.parse("geo:0,0?q=-0.054670, 109.303243");
+                Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+                startActivity(intent);
+            }
+        });
     }
 
     public void deskripsi1(View view) {

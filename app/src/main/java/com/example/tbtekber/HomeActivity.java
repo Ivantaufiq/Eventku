@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(a);
     }
 
-    public void buttonWishlist(View view) {
+    public void buttonPendaftaran(View view) {
         Intent b = new Intent(HomeActivity.this,MainActivity.class);
         startActivity(b);
     }

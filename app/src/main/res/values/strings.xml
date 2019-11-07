@@ -7,9 +7,14 @@
     <string name="can_not_create">Tidak Dapat Membuat Akun Baru</string>
     <string name="invalid_account">Akun Tidak Terdaftar</string>
     <string name="emailexists">Email Telah Tersedia, Gunakan Email Lain</string>
+
+    <string name="warunkv">Warunk V</string>
+    <string name="profil">Profil</string>
+    <string name="carievent">Cari Event</string>
+    <string name="pendaftaran">Pendaftaran Event</string>
+    <string name="pendaftarantext">Daftarkan Event Anda Disini!</string>
     <string name="profiltext">Informasi Data Diri Anda</string>
-    <string name="wishlisttext">Event Yang Ingin Anda Kunjungi</string>
-    <string name="carievent">Temukan Event Yang Anda Sukai</string>
+    <string name="carieventtext">Temukan Event Yang Anda Sukai</string>
     <string name="kontak">0895701992393</string>
     <string name="petunjuk">Petunjuk Lokasi</string>
 

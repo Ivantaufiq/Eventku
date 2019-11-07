@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tbtekber">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DaftarEvent.Event6Activity"></activity>
-        <activity android:name=".DaftarEvent.Event5Activity" />
-        <activity android:name=".DaftarEvent.Event4Activity" />
-        <activity android:name=".DaftarEvent.Event3Activity" />
-        <activity android:name=".DaftarEvent.Event2Activity" />
-        <activity android:name=".DaftarEvent.Event1Activity" />
+        <activity android:name=".DaftarEvent.Event6Activity"
+            android:label="@string/kembali"
+            android:parentActivityName=".CariEventActivity"
+            android:theme="@style/Theme"></activity>
+        <activity android:name=".DaftarEvent.Event5Activity"
+            android:label="@string/kembali"
+            android:parentActivityName=".CariEventActivity"
+            android:theme="@style/Theme"/>
+        <activity android:name=".DaftarEvent.Event4Activity"
+            android:label="@string/kembali"
+            android:parentActivityName=".CariEventActivity"
+            android:theme="@style/Theme"/>
+        <activity android:name=".DaftarEvent.Event3Activity"
+            android:label="@string/kembali"
+            android:parentActivityName=".CariEventActivity"
+            android:theme="@style/Theme"/>
+        <activity android:name=".DaftarEvent.Event2Activity"
+            android:label="@string/kembali"
+            android:parentActivityName=".CariEventActivity"
+            android:theme="@style/Theme"/>
+        <activity android:name=".DaftarEvent.Event1Activity"
+            android:label="@string/kembali"
+            android:parentActivityName=".CariEventActivity"
+            android:theme="@style/Theme"/>
         <activity
             android:name=".CariEventActivity"
             android:label="@string/kembali"
