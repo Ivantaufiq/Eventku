@@ -11,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PendaftaranEvent"
+        <activity android:name=".ProfiActivity"></activity>
+        <activity
+            android:name=".PendaftaranEvent"
             android:label="@string/kembali"
             android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" ></activity>
+            android:theme="@style/Theme" />
         <activity
             android:name=".DaftarEvent.Event6Activity"
             android:label="@string/kembali"
