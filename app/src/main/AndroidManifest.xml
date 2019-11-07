@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tbtekber">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,30 +11,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DaftarEvent.Event6Activity"
+        <activity android:name=".PendaftaranEvent"
             android:label="@string/kembali"
             android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme"></activity>
-        <activity android:name=".DaftarEvent.Event5Activity"
+            android:theme="@style/Theme" ></activity>
+        <activity
+            android:name=".DaftarEvent.Event6Activity"
             android:label="@string/kembali"
             android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme"/>
-        <activity android:name=".DaftarEvent.Event4Activity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".DaftarEvent.Event5Activity"
             android:label="@string/kembali"
             android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme"/>
-        <activity android:name=".DaftarEvent.Event3Activity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".DaftarEvent.Event4Activity"
             android:label="@string/kembali"
             android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme"/>
-        <activity android:name=".DaftarEvent.Event2Activity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".DaftarEvent.Event3Activity"
             android:label="@string/kembali"
             android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme"/>
-        <activity android:name=".DaftarEvent.Event1Activity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".DaftarEvent.Event2Activity"
             android:label="@string/kembali"
             android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme"/>
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".DaftarEvent.Event1Activity"
+            android:label="@string/kembali"
+            android:parentActivityName=".CariEventActivity"
+            android:theme="@style/Theme" />
         <activity
             android:name=".CariEventActivity"
             android:label="@string/kembali"
@@ -49,7 +59,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".DetailEventActivity" />
         <activity android:name=".EOActivity" />
         <activity android:name=".KonsumenActivity" />
         <activity android:name=".PembayaranActivity" />

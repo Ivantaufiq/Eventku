@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void buttonPendaftaran(View view) {
-        Intent b = new Intent(HomeActivity.this,MainActivity.class);
+        Intent b = new Intent(HomeActivity.this,PendaftaranEvent.class);
         startActivity(b);
     }
 
