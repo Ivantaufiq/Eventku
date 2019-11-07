@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -21,7 +22,8 @@ import com.example.tbtekber.Profil.UbahPassword;
 
 public class ProfilActivity extends AppCompatActivity {
     ImageView imageview;
-    Button gantifoto;
+    Button gantifoto, simpanprofil;
+    EditText inputnama, inputalamat;
 
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
@@ -33,6 +35,9 @@ public class ProfilActivity extends AppCompatActivity {
 
         imageview = findViewById(R.id.image_view);
         gantifoto = findViewById(R.id.gantifoto);
+        inputnama = findViewById(R.id.inputnama);
+        inputalamat = findViewById(R.id.inputalamat);
+        simpanprofil = findViewById(R.id.simpanprofil);
 
         gantifoto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +62,9 @@ public class ProfilActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
 
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);

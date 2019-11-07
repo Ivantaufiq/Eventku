@@ -87,34 +87,38 @@
                     android:layout_margin="10dp"
                     app:cardCornerRadius="8dp"
                     android:onClick="buttonPendaftaran">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/campaign"/>
+                            android:src="@drawable/campaign" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:text="@string/pendaftaran"/>
+                            android:text="@string/pendaftaran"
+                            android:textStyle="bold" />
+
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/colorPrimary"
-                            android:layout_margin="10dp"/>
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textAlignment="center"
-                            android:text="@string/pendaftarantext"
                             android:padding="5dp"
-                            />
+                            android:text="@string/pendaftarantext"
+                            android:textAlignment="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>

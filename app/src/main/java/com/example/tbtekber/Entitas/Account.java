@@ -30,6 +30,24 @@ public class Account implements Serializable {
         this.email = email;
     }
 
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
     private String password;
     private String email;
+    private String nama;
+    private String alamat;
 }
