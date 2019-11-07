@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UbahPassword"></activity>
+        <activity android:name=".HubungiKamiActivity"></activity>
+        <activity android:name=".UbahPassword" />
         <activity android:name=".UbahEmail" />
         <activity android:name=".ProfilActivity" />
         <activity

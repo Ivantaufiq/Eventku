@@ -7,6 +7,7 @@
     <string name="can_not_create">Tidak Dapat Membuat Akun Baru</string>
     <string name="invalid_account">Akun Tidak Terdaftar</string>
     <string name="emailexists">Email Telah Tersedia, Gunakan Email Lain</string>
+    <string name="lihat">Lihat Detail</string>
 
     <string name="warunkv">Warunk V</string>
     <string name="profil">Profil</string>

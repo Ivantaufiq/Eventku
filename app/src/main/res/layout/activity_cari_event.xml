@@ -54,7 +54,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tglphotography"
                         android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:textSize="15dp"/>
 
                 </LinearLayout>
@@ -68,7 +68,7 @@
                     android:textColor="@color/putih"
                     android:background="@drawable/round"
                     android:onClick="event1"
-                    android:text="Lihat Detail"/>
+                    android:text="@string/lihat"/>
 
             </LinearLayout>
 
@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tglcycling"
                         android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:textSize="15dp"/>
 
                 </LinearLayout>
@@ -115,7 +115,7 @@
                     android:background="@drawable/round"
                     android:layout_marginBottom="4dp"
                     android:onClick="event2"
-                    android:text="Lihat Detail"/>
+                    android:text="@string/lihat"/>
 
             </LinearLayout>
 
@@ -148,7 +148,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tglfood"
                         android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:textSize="15dp"/>
 
                 </LinearLayout>
@@ -162,7 +162,7 @@
                     android:textColor="@color/putih"
                     android:background="@drawable/round"
                     android:onClick="event3"
-                    android:text="Lihat Detail"/>
+                    android:text="@string/lihat"/>
 
             </LinearLayout>
 
@@ -195,7 +195,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tglpain"
                         android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:textSize="15dp"/>
 
                 </LinearLayout>
@@ -209,7 +209,7 @@
                     android:textColor="@color/putih"
                     android:background="@drawable/round"
                     android:onClick="event4"
-                    android:text="Lihat Detail"/>
+                    android:text="@string/lihat"/>
 
             </LinearLayout>
 
@@ -233,16 +233,16 @@
                         android:layout_width="240dp"
                         android:layout_marginLeft="5dp"
                         android:layout_height="wrap_content"
-                        android:text="Seminar Nasional"
+                        android:text="@string/seminar"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="18 November 2019"
+                        android:text="@string/tglseminar"
                         android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:textSize="15dp"/>
 
                 </LinearLayout>
@@ -256,7 +256,7 @@
                     android:textColor="@color/putih"
                     android:background="@drawable/round"
                     android:onClick="event5"
-                    android:text="Lihat Detail"/>
+                    android:text="@string/lihat"/>
 
             </LinearLayout>
 
@@ -280,16 +280,16 @@
                         android:layout_width="240dp"
                         android:layout_marginLeft="5dp"
                         android:layout_height="wrap_content"
-                        android:text="Game Competition"
+                        android:text="@string/gamecomp"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="24 November 2019"
+                        android:text="@string/tglgame"
                         android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:textSize="15dp"/>
 
                 </LinearLayout>
@@ -303,13 +303,10 @@
                     android:textColor="@color/putih"
                     android:background="@drawable/round"
                     android:onClick="event6"
-                    android:text="Lihat Detail"/>
+                    android:text="@string/lihat"/>
 
             </LinearLayout>
-
-
         </LinearLayout>
-
     </ScrollView>
     </LinearLayout>
 

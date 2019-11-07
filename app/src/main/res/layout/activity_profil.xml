@@ -87,7 +87,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:onClick="ubahemail">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -116,7 +117,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:onClick="ubahpassword">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -137,6 +139,36 @@
                     android:text="Atur"
                     android:layout_marginLeft="20dp"
                     android:drawableRight="@drawable/ic_keyboard_arrow_right_blue_24dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:onClick="hubungikami">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Hubungi Kami"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_blue_24dp"
+                    android:text=""
+                    android:textSize="14dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
