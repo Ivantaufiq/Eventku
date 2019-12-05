@@ -1,22 +1,35 @@
 package com.example.tbtekber.Profil;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
+import com.example.tbtekber.ProfilActivity;
 import com.example.tbtekber.R;
 
-import java.net.URI;
 
 public class HubungiKamiActivity extends AppCompatActivity {
+    ImageView arrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hubungi_kami);
+
+        arrow = findViewById(R.id.arrow);
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HubungiKamiActivity.this, ProfilActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void instagram(View view) {

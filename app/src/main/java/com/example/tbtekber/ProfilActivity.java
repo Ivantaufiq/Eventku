@@ -16,12 +16,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.tbtekber.Intent.Home2;
 import com.example.tbtekber.Profil.HubungiKamiActivity;
 import com.example.tbtekber.Profil.UbahEmail;
 import com.example.tbtekber.Profil.UbahPassword;
 
 public class ProfilActivity extends AppCompatActivity {
-    ImageView imageview;
+    ImageView imageview, arrow;
     Button gantifoto, simpanprofil;
     EditText inputnama, inputalamat;
 
@@ -38,6 +39,22 @@ public class ProfilActivity extends AppCompatActivity {
         inputnama = findViewById(R.id.inputnama);
         inputalamat = findViewById(R.id.inputalamat);
         simpanprofil = findViewById(R.id.simpanprofil);
+        arrow = findViewById(R.id.arrow);
+
+        simpanprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Berhasil Simpan",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfilActivity.this, Home2.class);
+                startActivity(intent);
+            }
+        });
 
         gantifoto.setOnClickListener(new View.OnClickListener() {
             @Override

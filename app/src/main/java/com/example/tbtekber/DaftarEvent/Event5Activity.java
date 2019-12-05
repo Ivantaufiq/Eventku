@@ -10,14 +10,18 @@ import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.tbtekber.BeliTiketActivity;
+import com.example.tbtekber.CariEventActivity;
 import com.example.tbtekber.R;
 
 public class Event5Activity extends AppCompatActivity {
     LinearLayout expandableView;
-    Button arrowBtn,gps5;
+    Button arrowBtn,gps5,belitiket;
     CardView cardView;
+    ImageView arrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,24 @@ public class Event5Activity extends AppCompatActivity {
         arrowBtn = findViewById(R.id.arrowBtn);
         cardView = findViewById(R.id.cardView);
         gps5 = findViewById(R.id.gps5);
+        arrow = findViewById(R.id.arrow);
+        belitiket = findViewById(R.id.tiket);
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Event5Activity.this, CariEventActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        belitiket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Event5Activity.this, BeliTiketActivity.class);
+                startActivity(intent);
+            }
+        });
 
         gps5.setOnClickListener(new View.OnClickListener() {
             @Override

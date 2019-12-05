@@ -10,14 +10,17 @@ import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.tbtekber.CariEventActivity;
 import com.example.tbtekber.R;
 
 public class Event3Activity extends AppCompatActivity {
     LinearLayout expandableView;
     Button arrowBtn,gps3;
     CardView cardView;
+    ImageView arrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,15 @@ public class Event3Activity extends AppCompatActivity {
         arrowBtn = findViewById(R.id.arrowBtn);
         cardView = findViewById(R.id.cardView);
         gps3 = findViewById(R.id.gps3);
+        arrow = findViewById(R.id.arrow);
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Event3Activity.this, CariEventActivity.class);
+                startActivity(intent);
+            }
+        });
 
         gps3.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -7,6 +7,27 @@
     android:orientation="vertical"
     tools:context=".CariEventActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="12dp"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:tint="@color/putih"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carievent"
+            android:textColor="@color/putih"
+            android:textSize="22dp"
+            android:layout_marginLeft="35dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
     <ImageView
         android:layout_width="match_parent"
         android:padding="14dp"

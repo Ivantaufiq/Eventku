@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PilihDaftarEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="12dp"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:tint="@color/putih"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendaftaran Event"
+            android:textColor="@color/putih"
+            android:textSize="22dp"
+            android:layout_marginLeft="35dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Jenis Pendaftaran Event"
+        android:textAlignment="center"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/btnfree"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/linearshape2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="58dp"
+                android:src="@drawable/free" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/putih"
+                android:text="Free"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/putih"
+                android:text="Menampilkan Event Pada Bagian Cari Event"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnpremium"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/linearshape2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="74dp"
+                android:layout_height="58dp"
+                android:src="@drawable/advertising" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Premium"
+                android:textColor="@color/putih" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/putih"
+                android:text="+ Menampilkan Event ke Bagian Beranda"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

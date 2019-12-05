@@ -44,6 +44,16 @@
                 android:textColorHint="@color/colorPrimary"
                 android:layout_marginBottom="5dp"
                 android:backgroundTint="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/konfirpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/biru"
+                android:hint="Konfirmasi Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/colorPrimary"/>
 
             <Button
                 android:id="@+id/btndaftar"

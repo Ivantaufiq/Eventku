@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">Eventku</string>
 
+    <!-- Atribut   -->
+    <string name="pw">Password</string>
+    <string name="kpw">Konfirmasi Password</string>
+    <string name="nol">0</string>
+    <string name="resitext4">Nomor Pembayaran Bank transfer</string>
+    <string name="noresi">9888-0000-0432-0278</string>
+
+    <!--    Spinner-->
+    <string-array name="bank">
+        <item>BCA</item>
+        <item>BNI</item>
+        <item>BRI</item>
+    </string-array>
+
+
     <string name="error">Error</string>
     <string name="ok">Ok</string>
     <string name="kembali">Kembali</string>
@@ -61,6 +76,14 @@
     <string name="tglgame">24 Nov 2019</string>
     <string name="lokasigame">Warunk V</string>
     <string name="deskripsigame">Mengajak seluruh pecinta game offline maupun online di seluruh Kota
+        Pontianak untuk hadir dalam event kali ini. Akan ada banyak kompetisi game yang diadakan, tidak hanya satu game
+        saja, juga akan ada banyak hadiah dan kejutan yang disediakan. FREE HTM dan jangan lupa untuk membawa laptop/smartphone
+        kesayangan para pecinta game!</string>
+
+    <string name="health">Healthy Body, Happy Kids</string>
+    <string name="tglhealth">21 Des 2019</string>
+    <string name="lokasihealth">Gedung Konferensi, Universitas Tanjungpura</string>
+    <string name="deskripsihealth">Mengajak seluruh pecinta game offline maupun online di seluruh Kota
         Pontianak untuk hadir dalam event kali ini. Akan ada banyak kompetisi game yang diadakan, tidak hanya satu game
         saja, juga akan ada banyak hadiah dan kejutan yang disediakan. FREE HTM dan jangan lupa untuk membawa laptop/smartphone
         kesayangan para pecinta game!</string>

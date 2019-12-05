@@ -21,16 +21,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tbtekber.Profil.UbahEmail;
+
 import java.util.Calendar;
 
 public class PendaftaranEvent extends AppCompatActivity {
     private static final String TAG = "DataDiriActivity";
     private DatePickerDialog.OnDateSetListener mDateSetListener;
-    ImageView imageview;
-    Button gantifoto;
+    ImageView imageview,arrow;
+    Button gantifoto, daftar;
     TextView tglevent;
-
-
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
@@ -42,6 +42,25 @@ public class PendaftaranEvent extends AppCompatActivity {
         imageview = findViewById(R.id.image_view);
         gantifoto = findViewById(R.id.gantifoto);
         tglevent =  findViewById(R.id.tglevent);
+        arrow = findViewById(R.id.arrow);
+        daftar = findViewById(R.id.daftar);
+
+        daftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PendaftaranEvent.this, HomeActivity.class);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(),"Berhasil Menedaftarkan Event",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PendaftaranEvent.this, PilihDaftarEvent.class);
+                startActivity(intent);
+            }
+        });
 
         tglevent.setOnClickListener(new View.OnClickListener() {
             @Override

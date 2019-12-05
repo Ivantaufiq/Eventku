@@ -19,6 +19,7 @@ public class AccountDB extends SQLiteOpenHelper {
     private static String namaColumn = "nama";
     private static String alamatColumn = "alamat";
     private static String passwordColumn = "password";
+    private static String fotoColumn = "foto";
     private static String emailColumn = "email";
 
     //tabel pendaftaran event
@@ -26,12 +27,13 @@ public class AccountDB extends SQLiteOpenHelper {
     private static String idEvent = "id_event";
     private static String gambarEvent = "gambar_event";
     private static String namaEvent = "nama_event";
+    private static String lokasiEvent = "lokasi";
     private static String tglEvent = "tanggal_event";
     private static String deskripsiEvent = "deskripsi";
 
     private static final String CREATE_TABLE_EVENT = " create table " + tableEvent + "(" +
             idEvent + " integer primary key autoincrement, " +
-            namaEvent + " text," + tglEvent + " date, " +
+            namaEvent + " text," + tglEvent + " date, " + lokasiEvent + " text," +
             deskripsiEvent + " text, " + gambarEvent + " blob " +
             ")";
 
@@ -39,6 +41,7 @@ public class AccountDB extends SQLiteOpenHelper {
             idColumn + " integer primary key autoincrement, " +
             emailColumn + " text not null, " +
             passwordColumn + " text not null, " +
+            fotoColumn + " blob, " +
             namaColumn + " text, " +
             alamatColumn + " text " +
             ")";

@@ -3,7 +3,7 @@
     package="com.example.tbtekber">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,62 +12,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profil.HubungiKamiActivity"
-            android:label="@string/kembali"
-            android:parentActivityName=".ProfilActivity"
-            android:theme="@style/Theme"></activity>
-        <activity android:name=".Profil.UbahPassword"
-            android:label="@string/kembali"
-            android:parentActivityName=".ProfilActivity"
-            android:theme="@style/Theme"/>
-        <activity android:name=".Profil.UbahEmail"
-            android:label="@string/kembali"
-            android:parentActivityName=".ProfilActivity"
-            android:theme="@style/Theme"/>
-        <activity android:name=".ProfilActivity"
-            android:label="@string/kembali"
-            android:parentActivityName=".HomeActivity"
-            android:theme="@style/Theme"/>
-        <activity
-            android:name=".PendaftaranEvent"
-            android:label="@string/kembali"
-            android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" />
-        <activity
-            android:name=".DaftarEvent.Event6Activity"
-            android:label="@string/kembali"
-            android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" />
-        <activity
-            android:name=".DaftarEvent.Event5Activity"
-            android:label="@string/kembali"
-            android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" />
-        <activity
-            android:name=".DaftarEvent.Event4Activity"
-            android:label="@string/kembali"
-            android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" />
-        <activity
-            android:name=".DaftarEvent.Event3Activity"
-            android:label="@string/kembali"
-            android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" />
-        <activity
-            android:name=".DaftarEvent.Event2Activity"
-            android:label="@string/kembali"
-            android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" />
-        <activity
-            android:name=".DaftarEvent.Event1Activity"
-            android:label="@string/kembali"
-            android:parentActivityName=".CariEventActivity"
-            android:theme="@style/Theme" />
-        <activity
-            android:name=".CariEventActivity"
-            android:label="@string/kembali"
-            android:parentActivityName=".HomeActivity"
-            android:theme="@style/Theme" />
+        <activity android:name=".DaftarEvent.Event7Activity"></activity>
+        <activity android:name=".Intent.Profil2" />
+        <activity android:name=".Intent.Home3" />
+        <activity android:name=".Intent.Home2" />
+        <activity android:name=".Bayar2Activity" />
+        <activity android:name=".PremiumActivity" />
+        <activity android:name=".PilihDaftarEvent" />
+        <activity android:name=".BayarActivity" />
+        <activity android:name=".BeliTiketActivity" />
+        <activity android:name=".Profil.HubungiKamiActivity" />
+        <activity android:name=".Profil.UbahPassword" />
+        <activity android:name=".Profil.UbahEmail" />
+        <activity android:name=".ProfilActivity" />
+        <activity android:name=".PendaftaranEvent" />
+        <activity android:name=".DaftarEvent.Event6Activity" />
+        <activity android:name=".DaftarEvent.Event5Activity" />
+        <activity android:name=".DaftarEvent.Event4Activity" />
+        <activity android:name=".DaftarEvent.Event3Activity" />
+        <activity android:name=".DaftarEvent.Event2Activity" />
+        <activity android:name=".DaftarEvent.Event1Activity" />
+        <activity android:name=".CariEventActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".IntroActivity">
             <intent-filter>
