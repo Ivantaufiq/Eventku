@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.Transaksi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.tbtekber.DaftarEvent.Event5Activity;
+import com.example.tbtekber.R;
 
 public class BeliTiketActivity extends AppCompatActivity {
     private int naik = 0;

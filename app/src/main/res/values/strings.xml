@@ -83,8 +83,13 @@
     <string name="health">Healthy Body, Happy Kids</string>
     <string name="tglhealth">21 Des 2019</string>
     <string name="lokasihealth">Gedung Konferensi, Universitas Tanjungpura</string>
-    <string name="deskripsihealth">Mengajak seluruh pecinta game offline maupun online di seluruh Kota
-        Pontianak untuk hadir dalam event kali ini. Akan ada banyak kompetisi game yang diadakan, tidak hanya satu game
-        saja, juga akan ada banyak hadiah dan kejutan yang disediakan. FREE HTM dan jangan lupa untuk membawa laptop/smartphone
-        kesayangan para pecinta game!</string>
+    <string name="deskripsihealth">Healthy Body, Happy Kids adalah kegiatan sosialisasi mengenai kesehatan anak yang sangat
+        penting di era modern seperti ini. Mengingatkan bahwa kesehatan anak sangat penting untuk terus dijaga agar anak-anak
+        tetap kuat dan ceria dalam tumbuh kembangnya.</string>
+
+    <string name="volun">Volunteer Day</string>
+    <string name="tglvolun">5 Des 2019</string>
+    <string name="lokasivolun">Alun-Alun Kapuas</string>
+    <string name="deskripsivolun">Dalam memperingati Volunteer Day, kami mengajak seluruh masyarakat untuk turut serta dalam
+        membersihkan lingkungan sekitaran Pontianak.</string>
 </resources>

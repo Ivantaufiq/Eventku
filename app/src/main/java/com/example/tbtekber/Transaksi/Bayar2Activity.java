@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.Transaksi;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +17,9 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.tbtekber.DaftarEvent.Event5Activity;
+import com.example.tbtekber.Intent.Home4;
+import com.example.tbtekber.PremiumActivity;
+import com.example.tbtekber.R;
 
 public class Bayar2Activity extends AppCompatActivity {
     Spinner spinner;
@@ -61,7 +63,7 @@ public class Bayar2Activity extends AppCompatActivity {
         kirim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Bayar2Activity.this, HomeActivity.class);
+                Intent intent = new Intent(Bayar2Activity.this, Home4.class);
                 startActivity(intent);
 
                 Toast.makeText(getApplicationContext(),"Berhasil Menedaftarkan Event",Toast.LENGTH_SHORT).show();

@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.tbtekber.CariEventActivity;
+import com.example.tbtekber.Intent.CariEvent2;
 import com.example.tbtekber.R;
 
 public class Event7Activity extends AppCompatActivity {
@@ -37,7 +38,7 @@ public class Event7Activity extends AppCompatActivity {
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Event7Activity.this, CariEventActivity.class);
+                Intent intent = new Intent(Event7Activity.this, CariEvent2.class);
                 startActivity(intent);
             }
         });

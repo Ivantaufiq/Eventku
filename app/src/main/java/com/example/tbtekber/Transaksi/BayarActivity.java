@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.Transaksi;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,7 +11,6 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,6 +18,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.tbtekber.DaftarEvent.Event5Activity;
+import com.example.tbtekber.R;
 
 public class BayarActivity extends AppCompatActivity{
     Spinner spinner;

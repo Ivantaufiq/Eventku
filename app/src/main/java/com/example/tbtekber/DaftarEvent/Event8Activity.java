@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
@@ -12,57 +11,41 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import com.example.tbtekber.Transaksi.BeliTiketActivity;
-import com.example.tbtekber.CariEventActivity;
+import com.example.tbtekber.Intent.CariEvent2;
+import com.example.tbtekber.Intent.CariEvent3;
 import com.example.tbtekber.R;
 
-public class Event5Activity extends AppCompatActivity {
+public class Event8Activity extends AppCompatActivity {
     LinearLayout expandableView;
-    Button arrowBtn,gps5,belitiket;
+    Button arrowBtn,gps7;
     CardView cardView;
     ImageView arrow;
+    TextView textloc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event5);
-
+        setContentView(R.layout.activity_event8);
         expandableView = findViewById(R.id.expandableView);
         arrowBtn = findViewById(R.id.arrowBtn);
         cardView = findViewById(R.id.cardView);
-        gps5 = findViewById(R.id.gps5);
+        gps7 = findViewById(R.id.gps7);
         arrow = findViewById(R.id.arrow);
-        belitiket = findViewById(R.id.tiket);
+        textloc = findViewById(R.id.textloc);
 
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Event5Activity.this, CariEventActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        belitiket.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Event5Activity.this, BeliTiketActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        gps5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri addressUri = Uri.parse("geo:0,0?q=-0.058471, 109.346750");
-                Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+                Intent intent = new Intent(Event8Activity.this, CariEvent3.class);
                 startActivity(intent);
             }
         });
     }
 
-    public void deskripsi5(View view) {
-        if (expandableView.getVisibility()==View.GONE){
+    public void deskripsi8(View view) {
+        if (expandableView.getVisibility() == View.GONE) {
             TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
             expandableView.setVisibility(View.VISIBLE);
             arrowBtn.setBackgroundResource(R.drawable.ic_keyboard_arrow_down_blue_24dp);

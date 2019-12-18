@@ -21,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tbtekber.Intent.Home3;
 import com.example.tbtekber.Profil.UbahEmail;
 
 import java.util.Calendar;
@@ -48,7 +49,7 @@ public class PendaftaranEvent extends AppCompatActivity {
         daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PendaftaranEvent.this, HomeActivity.class);
+                Intent intent = new Intent(PendaftaranEvent.this, Home3.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"Berhasil Menedaftarkan Event",Toast.LENGTH_SHORT).show();
             }
