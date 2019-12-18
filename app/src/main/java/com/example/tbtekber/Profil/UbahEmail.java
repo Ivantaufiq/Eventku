@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.tbtekber.ProfilActivity;
+import com.example.tbtekber.Home.ProfilActivity;
 import com.example.tbtekber.R;
 
 public class UbahEmail extends AppCompatActivity {

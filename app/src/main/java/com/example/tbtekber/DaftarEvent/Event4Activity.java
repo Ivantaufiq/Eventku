@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.tbtekber.CariEventActivity;
+import com.example.tbtekber.Home.CariEventActivity;
 import com.example.tbtekber.R;
 
 public class Event4Activity extends AppCompatActivity {

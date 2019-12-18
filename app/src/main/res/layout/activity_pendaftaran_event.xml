@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PendaftaranEvent">
+    tools:context=".PendaftaranEvent.FreeEventActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"

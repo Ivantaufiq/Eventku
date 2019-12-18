@@ -6,11 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.tbtekber.CariEventActivity;
 import com.example.tbtekber.DaftarEvent.Event5Activity;
 import com.example.tbtekber.DaftarEvent.Event6Activity;
-import com.example.tbtekber.PilihDaftarEvent;
-import com.example.tbtekber.ProfilActivity;
+import com.example.tbtekber.Home.PendaftaranEventActivity;
 import com.example.tbtekber.R;
 
 public class Home3 extends AppCompatActivity {
@@ -27,7 +25,7 @@ public class Home3 extends AppCompatActivity {
     }
 
     public void buttonPendaftaran(View view) {
-        Intent b = new Intent(Home3.this, PilihDaftarEvent.class);
+        Intent b = new Intent(Home3.this, PendaftaranEventActivity.class);
         startActivity(b);
     }
 

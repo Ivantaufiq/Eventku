@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import com.example.tbtekber.Profil.HubungiKamiActivity;
 import com.example.tbtekber.Profil.UbahEmail;
 import com.example.tbtekber.Profil.UbahPassword;
-import com.example.tbtekber.ProfilActivity;
 import com.example.tbtekber.R;
 
 public class Profil2 extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.Intent;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,50 +11,30 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.tbtekber.Intent.Home2;
-import com.example.tbtekber.Profil.HubungiKamiActivity;
-import com.example.tbtekber.Profil.UbahEmail;
-import com.example.tbtekber.Profil.UbahPassword;
+import com.example.tbtekber.PendaftaranEvent.PremiumActivity;
+import com.example.tbtekber.R;
 
-public class ProfilActivity extends AppCompatActivity {
-    ImageView imageview, arrow;
-    Button gantifoto, simpanprofil;
-    EditText inputnama, inputalamat;
-
+public class Bayar2Activity extends AppCompatActivity {
+    Spinner spinner;
+    ImageView arrow,imageview;
+    Button kirim,gantifoto;
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profil);
-
+        setContentView(R.layout.activity_bayar2);
+        arrow = findViewById(R.id.arrow);
+        kirim = findViewById(R.id.kirim);
         imageview = findViewById(R.id.image_view);
         gantifoto = findViewById(R.id.gantifoto);
-        inputnama = findViewById(R.id.inputnama);
-        inputalamat = findViewById(R.id.inputalamat);
-        simpanprofil = findViewById(R.id.simpanprofil);
-        arrow = findViewById(R.id.arrow);
-
-        simpanprofil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Berhasil Simpan",Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        arrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ProfilActivity.this, Home2.class);
-                startActivity(intent);
-            }
-        });
 
         gantifoto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,10 +58,30 @@ public class ProfilActivity extends AppCompatActivity {
                 }
             }
         });
+
+        kirim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Bayar2Activity.this, Home4.class);
+                startActivity(intent);
+
+                Toast.makeText(getApplicationContext(),"Berhasil Menedaftarkan Event",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Bayar2Activity.this, PremiumActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        spinner = findViewById(R.id.bank);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.bank, android.R.layout.simple_spinner_item );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
     }
-
-
-
 
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
@@ -89,6 +89,7 @@ public class ProfilActivity extends AppCompatActivity {
         startActivityForResult(intent, IMAGE_PICK_CODE);
     }
 
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode){
             case PERMISSION_CODE:{
@@ -105,25 +106,9 @@ public class ProfilActivity extends AppCompatActivity {
     @SuppressLint("MissingSuperCall")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
+        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE) {
             //set image to image view
             imageview.setImageURI(data.getData());
         }
-    }
-
-
-    public void hubungikami(View view) {
-        Intent intent = new Intent(ProfilActivity.this, HubungiKamiActivity.class);
-        startActivity(intent);
-    }
-
-    public void ubahemail(View view) {
-        Intent intent = new Intent(ProfilActivity.this, UbahEmail.class);
-        startActivity(intent);
-    }
-
-    public void ubahpassword(View view) {
-        Intent intent = new Intent(ProfilActivity.this, UbahPassword.class);
-        startActivity(intent);
     }
 }

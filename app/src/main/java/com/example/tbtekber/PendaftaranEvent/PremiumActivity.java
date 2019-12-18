@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.PendaftaranEvent;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,47 +21,36 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.tbtekber.Intent.Home3;
-import com.example.tbtekber.Profil.UbahEmail;
+import com.example.tbtekber.Home.PendaftaranEventActivity;
+import com.example.tbtekber.R;
+import com.example.tbtekber.Intent.Bayar2Activity;
 
 import java.util.Calendar;
 
-public class PendaftaranEvent extends AppCompatActivity {
-    private static final String TAG = "DataDiriActivity";
+
+public class PremiumActivity extends AppCompatActivity {
+    private static final String TAG = "PremiumActivity";
     private DatePickerDialog.OnDateSetListener mDateSetListener;
-    ImageView imageview,arrow;
-    Button gantifoto, daftar;
     TextView tglevent;
+    private int naik = 0;
+    Button countup, countdown, daftar, gantifoto;
+    TextView hasil;
+    ImageView arrow, imageview;
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pendaftaran_event);
-
-        imageview = findViewById(R.id.image_view);
+        setContentView(R.layout.activity_premium);
+        countup = findViewById(R.id.countup);
+        countdown = findViewById(R.id.countdown);
         gantifoto = findViewById(R.id.gantifoto);
+        imageview = findViewById(R.id.image_view);
+        hasil = findViewById(R.id.hasil);
+        daftar = findViewById(R.id.daftar);
         tglevent =  findViewById(R.id.tglevent);
         arrow = findViewById(R.id.arrow);
-        daftar = findViewById(R.id.daftar);
-
-        daftar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PendaftaranEvent.this, Home3.class);
-                startActivity(intent);
-                Toast.makeText(getApplicationContext(),"Berhasil Menedaftarkan Event",Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        arrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PendaftaranEvent.this, PilihDaftarEvent.class);
-                startActivity(intent);
-            }
-        });
 
         tglevent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +60,7 @@ public class PendaftaranEvent extends AppCompatActivity {
                 int month = cal.get(Calendar.MONTH);
                 int day = cal.get(Calendar.DAY_OF_MONTH);
 
-                DatePickerDialog dialog = new DatePickerDialog(PendaftaranEvent.this,
+                DatePickerDialog dialog = new DatePickerDialog(PremiumActivity.this,
                         android.R.style.Theme_Holo_Light_Dialog_MinWidth, mDateSetListener,
                         year, month, day);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -113,7 +102,36 @@ public class PendaftaranEvent extends AppCompatActivity {
             }
         });
 
+        daftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PremiumActivity.this, Bayar2Activity.class);
+                startActivity(intent);
+            }
+        });
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PremiumActivity.this, PendaftaranEventActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        countup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                naik ++;
+                hasil.setText(Integer.toString(naik));
+            }
+        });
+
+        countdown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                naik --;
+                hasil.setText(Integer.toString(naik));
+            }
+        });
     }
 
     private void pickImageFromGallery() {

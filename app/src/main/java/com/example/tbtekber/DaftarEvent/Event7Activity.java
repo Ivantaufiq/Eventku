@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.tbtekber.CariEventActivity;
 import com.example.tbtekber.Intent.CariEvent2;
 import com.example.tbtekber.R;
 

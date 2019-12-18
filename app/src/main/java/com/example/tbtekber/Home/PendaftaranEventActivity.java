@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class PilihDaftarEvent extends AppCompatActivity {
+import com.example.tbtekber.HomeActivity;
+import com.example.tbtekber.PendaftaranEvent.FreeEventActivity;
+import com.example.tbtekber.PendaftaranEvent.PremiumActivity;
+import com.example.tbtekber.R;
+
+public class PendaftaranEventActivity extends AppCompatActivity {
     LinearLayout btnfree, btnpremium;
     ImageView arrow;
 
@@ -24,7 +29,7 @@ public class PilihDaftarEvent extends AppCompatActivity {
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PilihDaftarEvent.this, HomeActivity.class);
+                Intent intent = new Intent(PendaftaranEventActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +37,7 @@ public class PilihDaftarEvent extends AppCompatActivity {
         btnpremium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PilihDaftarEvent.this, PremiumActivity.class);
+                Intent intent = new Intent(PendaftaranEventActivity.this, PremiumActivity.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +45,7 @@ public class PilihDaftarEvent extends AppCompatActivity {
         btnfree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PilihDaftarEvent.this, PendaftaranEvent.class);
+                Intent intent = new Intent(PendaftaranEventActivity.this, FreeEventActivity.class);
                 startActivity(intent);
             }
         });

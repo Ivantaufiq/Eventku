@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.tbtekber.CariEventActivity;
 import com.example.tbtekber.DaftarEvent.Event1Activity;
 import com.example.tbtekber.DaftarEvent.Event2Activity;
 import com.example.tbtekber.DaftarEvent.Event3Activity;
@@ -15,7 +14,6 @@ import com.example.tbtekber.DaftarEvent.Event4Activity;
 import com.example.tbtekber.DaftarEvent.Event5Activity;
 import com.example.tbtekber.DaftarEvent.Event6Activity;
 import com.example.tbtekber.DaftarEvent.Event7Activity;
-import com.example.tbtekber.HomeActivity;
 import com.example.tbtekber.R;
 
 public class CariEvent2 extends AppCompatActivity {

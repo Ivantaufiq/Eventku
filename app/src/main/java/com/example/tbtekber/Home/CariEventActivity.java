@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,8 @@ import com.example.tbtekber.DaftarEvent.Event3Activity;
 import com.example.tbtekber.DaftarEvent.Event4Activity;
 import com.example.tbtekber.DaftarEvent.Event5Activity;
 import com.example.tbtekber.DaftarEvent.Event6Activity;
+import com.example.tbtekber.HomeActivity;
+import com.example.tbtekber.R;
 
 public class CariEventActivity extends AppCompatActivity {
     ImageView arrow;

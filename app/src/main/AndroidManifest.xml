@@ -20,23 +20,23 @@
         <activity android:name=".Intent.Profil2" />
         <activity android:name=".Intent.Home3" />
         <activity android:name=".Intent.Home2" />
-        <activity android:name=".Transaksi.Bayar2Activity" />
-        <activity android:name=".PremiumActivity" />
-        <activity android:name=".PilihDaftarEvent" />
+        <activity android:name=".Intent.Bayar2Activity" />
+        <activity android:name=".PendaftaranEvent.PremiumActivity" />
+        <activity android:name=".Home.PendaftaranEventActivity" />
         <activity android:name=".Transaksi.BayarActivity" />
         <activity android:name=".Transaksi.BeliTiketActivity" />
         <activity android:name=".Profil.HubungiKamiActivity" />
         <activity android:name=".Profil.UbahPassword" />
         <activity android:name=".Profil.UbahEmail" />
-        <activity android:name=".ProfilActivity" />
-        <activity android:name=".PendaftaranEvent" />
+        <activity android:name=".Home.ProfilActivity" />
+        <activity android:name=".PendaftaranEvent.FreeEventActivity" />
         <activity android:name=".DaftarEvent.Event6Activity" />
         <activity android:name=".DaftarEvent.Event5Activity" />
         <activity android:name=".DaftarEvent.Event4Activity" />
         <activity android:name=".DaftarEvent.Event3Activity" />
         <activity android:name=".DaftarEvent.Event2Activity" />
         <activity android:name=".DaftarEvent.Event1Activity" />
-        <activity android:name=".CariEventActivity" />
+        <activity android:name=".Home.CariEventActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".IntroActivity">
             <intent-filter>
@@ -46,7 +46,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".PembayaranActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

@@ -8,6 +8,9 @@ import android.view.View;
 
 import com.example.tbtekber.DaftarEvent.Event5Activity;
 import com.example.tbtekber.DaftarEvent.Event6Activity;
+import com.example.tbtekber.Home.CariEventActivity;
+import com.example.tbtekber.Home.ProfilActivity;
+import com.example.tbtekber.Home.PendaftaranEventActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -18,17 +21,17 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void buttonSearch(View view) {
-        Intent a = new Intent(HomeActivity.this,CariEventActivity.class);
+        Intent a = new Intent(HomeActivity.this, CariEventActivity.class);
         startActivity(a);
     }
 
     public void buttonPendaftaran(View view) {
-        Intent b = new Intent(HomeActivity.this,PilihDaftarEvent.class);
+        Intent b = new Intent(HomeActivity.this, PendaftaranEventActivity.class);
         startActivity(b);
     }
 
     public void buttonProfil(View view) {
-        Intent c = new Intent(HomeActivity.this,ProfilActivity.class);
+        Intent c = new Intent(HomeActivity.this, ProfilActivity.class);
         startActivity(c);
     }
 
