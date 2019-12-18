@@ -1,4 +1,4 @@
-package com.example.tbtekber;
+package com.example.tbtekber.SplashScreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.example.tbtekber.MainActivity;
+import com.example.tbtekber.R;
 
 public class IntroActivity extends AppCompatActivity {
     private ImageView iv1;
@@ -17,7 +20,7 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-        iv1 = (ImageView) findViewById(R.id.iv1);
+        iv1 = findViewById(R.id.iv1);
 
         animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.push_down);
         iv1.setAnimation(animation);
